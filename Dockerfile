@@ -23,6 +23,8 @@ ENV SECRET_KEY_BASE=$SECRET_KEY_BASE
 ARG EPPO_SDK_KEY
 ENV EPPO_SDK_KEY=$EPPO_SDK_KEY
 
+ENV EPPO_LOG="eppo=debug"
+
 # Precompile assets (optional, for production)
 RUN SECRET_KEY_BASE_DUMMY=1 bundle exec rake assets:precompile
 

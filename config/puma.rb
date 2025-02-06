@@ -33,11 +33,11 @@ plugin :tmp_restart
 # In other environments, only set the PID file if requested.
 pidfile ENV["PIDFILE"] if ENV["PIDFILE"]
 
-require 'eppo_client'
+require "eppo_client"
 
-config = EppoClient::Config.new(ENV["EPPO_SDK_KEY"], log_level: "info")
+config = EppoClient::Config.new(ENV["EPPO_SDK_KEY"], log_level: "debug")
 
 on_worker_boot do
-  EppoClient::init(config)
+  EppoClient.init(config)
   Rails.application.config.eppo_client = EppoClient::Client.instance
 end

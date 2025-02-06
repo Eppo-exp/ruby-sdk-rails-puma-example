@@ -15,4 +15,9 @@
     </strong>
     <%= Rails.application.config.eppo_client.get_boolean_assignment("sdk-event-logging", 'foo', { companyId: 82 }, false) %>
   </li>
+  <%= form_tag("/track_event", method: "post") do %>
+    <%= text_field_tag(:event) %>
+    <%= text_field_tag(:properties) %>
+    <%= submit_tag("Track event") %>
+  <% end %>
 </ul>
