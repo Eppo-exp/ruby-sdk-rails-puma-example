@@ -101,14 +101,14 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     drb (2.2.1)
-    eppo-server-sdk (3.4.5)
+    eppo-server-sdk (3.4.6)
       rb_sys (~> 0.9.102)
-    eppo-server-sdk (3.4.5-aarch64-linux)
-    eppo-server-sdk (3.4.5-aarch64-linux-musl)
-    eppo-server-sdk (3.4.5-arm-linux)
-    eppo-server-sdk (3.4.5-arm64-darwin)
-    eppo-server-sdk (3.4.5-x86_64-linux)
-    eppo-server-sdk (3.4.5-x86_64-linux-musl)
+    eppo-server-sdk (3.4.6-aarch64-linux)
+    eppo-server-sdk (3.4.6-aarch64-linux-musl)
+    eppo-server-sdk (3.4.6-arm-linux)
+    eppo-server-sdk (3.4.6-arm64-darwin)
+    eppo-server-sdk (3.4.6-x86_64-linux)
+    eppo-server-sdk (3.4.6-x86_64-linux-musl)
     erubi (1.13.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -327,7 +327,7 @@ DEPENDENCIES
   brakeman
   capybara
   debug
-  eppo-server-sdk (= 3.4.5)
+  eppo-server-sdk (= 3.4.6)
   importmap-rails
   jbuilder
   puma (>= 5.0)

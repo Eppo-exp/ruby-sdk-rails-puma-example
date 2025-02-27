@@ -56,4 +56,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "eppo-server-sdk", "3.4.5"
+gem "eppo-server-sdk", "3.4.6"
